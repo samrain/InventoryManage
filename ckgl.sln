@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ckgl", "ckgl\ckgl.csproj", "{40AA7F46-4908-4172-88E5-82F05E8DD6C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79} = {F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}
+		{44011B57-05BF-481D-9580-3C3A6578A558} = {44011B57-05BF-481D-9580-3C3A6578A558}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBManagerForSqlite", "DBManagerForSqlite\DBManagerForSqlite.csproj", "{44011B57-05BF-481D-9580-3C3A6578A558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClass", "BaseClass\BaseClass.csproj", "{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiPiracy", "AntiPiracy\AntiPiracy.csproj", "{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Debug|x86.ActiveCfg = Debug|x86
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Debug|x86.Build.0 = Debug|x86
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Release|x86.ActiveCfg = Release|x86
+		{40AA7F46-4908-4172-88E5-82F05E8DD6C2}.Release|x86.Build.0 = Release|x86
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Debug|x86.ActiveCfg = Debug|x86
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Debug|x86.Build.0 = Debug|x86
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Release|x86.ActiveCfg = Release|x86
+		{44011B57-05BF-481D-9580-3C3A6578A558}.Release|x86.Build.0 = Release|x86
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Debug|x86.ActiveCfg = Debug|x86
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Debug|x86.Build.0 = Debug|x86
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Release|x86.ActiveCfg = Release|x86
+		{F3CF5F04-2A1D-4465-BA5E-C5552B5CEE79}.Release|x86.Build.0 = Release|x86
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7AE261-83E4-4EA0-BA31-1CFB24D74C76}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

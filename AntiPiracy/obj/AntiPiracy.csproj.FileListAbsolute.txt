@@ -1,0 +1,5 @@
+C:\demo\ckgl\AntiPiracy\bin\Debug\AntiPiracy.dll
+C:\demo\ckgl\AntiPiracy\bin\Debug\AntiPiracy.pdb
+C:\demo\ckgl\AntiPiracy\obj\Debug\ResolveAssemblyReference.cache
+C:\demo\ckgl\AntiPiracy\obj\Debug\AntiPiracy.dll
+C:\demo\ckgl\AntiPiracy\obj\Debug\AntiPiracy.pdb

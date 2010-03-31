@@ -1,0 +1,12 @@
+C:\demo\ckgl\BaseClass\bin\x86\Release\BaseClass.dll
+C:\demo\ckgl\BaseClass\bin\x86\Release\BaseClass.pdb
+C:\demo\ckgl\BaseClass\obj\x86\Release\ResolveAssemblyReference.cache
+C:\demo\ckgl\BaseClass\obj\x86\Release\BaseClass.dll
+C:\demo\ckgl\BaseClass\obj\x86\Release\BaseClass.pdb
+C:\demo\ckgl\BaseClass\bin\x86\Debug\BaseClass.dll
+C:\demo\ckgl\BaseClass\bin\x86\Debug\BaseClass.pdb
+C:\demo\ckgl\BaseClass\bin\x86\Debug\BaseClass.dll.CodeAnalysisLog.xml
+C:\demo\ckgl\BaseClass\bin\x86\Debug\BaseClass.dll.lastcodeanalysissucceeded
+C:\demo\ckgl\BaseClass\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\demo\ckgl\BaseClass\obj\x86\Debug\BaseClass.dll
+C:\demo\ckgl\BaseClass\obj\x86\Debug\BaseClass.pdb

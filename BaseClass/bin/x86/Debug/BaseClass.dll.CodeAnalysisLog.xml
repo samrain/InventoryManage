@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 8\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.Xsl"?>
+<FxCopReport Version="8">
+ <Targets>
+  <Target Name="C:\demo\ckgl\BaseClass\bin\x86\Debug\BaseClass.dll">
+   <Modules>
+    <Module Name="baseclass.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+       <Issue Certainty="95" Level="CriticalError">未找到程序集“BaseClass”的有效权限请求。应始终使用 SecurityAction.RequestMinimum 指定最小的安全权限。</Issue>
+      </Message>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">用强名称密钥对“BaseClass”进行签名。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+       <Issue Name="NoAttr" Certainty="95" Level="Error">应使用 CLSCompliantAttribute 来标记“BaseClass”，其值应为 true。</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="InventoryManager">
+       <Types>
+        <Type Name="Account" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="CustomerId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“CustomerId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Day" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Day”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Id" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Id”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="InMoney" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“InMoney”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ToString():System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Decimal.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Account.cs" Line="19">Account.ToString():String 对未显式提供 IFormatProvider 的 System.Decimal.ToString 进行调用。此操作应改为对 System.Decimal.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Account.cs" Line="16">Account.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Account.cs" Line="17">Account.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Customer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="Address" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Address”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Email" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Email”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Fax" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Fax”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Id" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Id”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Name" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Name”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Phone" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Phone”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Remark" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Remark”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ToString():System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Customer.cs" Line="20">Customer.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Zipcode" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Zipcode”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Inventory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="Boxs" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Boxs”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Counts" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Counts”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="CustomerId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“CustomerId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="CustomerName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“CustomerName”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Day" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Day”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Id" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Id”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="InventoryId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“InventoryId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="InventoryType" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“InventoryType”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Price" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Price”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductName”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductSn" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductSn”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ToString():System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Double.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Inventory.cs" Line="32">Inventory.ToString():String 对未显式提供 IFormatProvider 的 System.Double.ToString 进行调用。此操作应改为对 System.Double.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Inventory.cs" Line="26">Inventory.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Inventory.cs" Line="28">Inventory.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Inventory.cs" Line="29">Inventory.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Inventory.cs" Line="30">Inventory.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Inventory.cs" Line="31">Inventory.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UserId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“UserId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Product" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="Id" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Id”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductName”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductSn" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductSn”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Remark" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Remark”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ToString():System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Product.cs" Line="17">Product.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Product.cs" Line="21">Product.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UnitPerBox" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“UnitPerBox”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Stocks" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="Lasttime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Lasttime”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductName”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ProductSn" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“ProductSn”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Remain" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Remain”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ToString():System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Stocks.cs" Line="19">Stocks.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Stocks.cs" Line="20">Stocks.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="Stocks.cs" Line="21">Stocks.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="WarehouseId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“WarehouseId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="User" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="Id" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Id”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Password" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Password”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="Remark" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“Remark”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="ToString():System.String" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\demo\ckgl\BaseClass" File="User.cs" Line="19">User.ToString():String 对未显式提供 IFormatProvider 的 System.Int32.ToString 进行调用。此操作应改为对 System.Int32.ToString(System.IFormatProvider) 的调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UserId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“UserId”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UserInfo" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“UserInfo”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UserLevel" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“UserLevel”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="UserName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-02-21 09:37:44Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">将“UserName”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209">
+   <Name>程序集应声明最小安全性</Name>
+   <Description>权限请求可防止在程序集中的代码开始执行后引发安全异常。当在某个程序集上指定权限请求后，如果程序集没有足够的权限，则在运行时不会加载该程序集。若要解决与此规则冲突的情况，请添加属性以指定该程序集将需要或可能需要的权限，以及不希望授予它的权限。若要指定所需权限，请使用 SecurityAction.Minimum。若要指定程序集可能需要的权限，请使用 SecurityAction.RequestOptional。若要指定不得授予程序集的权限，请使用 SecurityAction.RequestRefuse。</Description>
+   <Resolution Name="Default">未找到程序集“{0}”的有效权限请求。应始终使用 SecurityAction.RequestMinimum 指定最小的安全权限。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="UsageRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>程序集应具有有效的强名称</Name>
+   <Description>程序集没有强名称，强名称无效，或者强名称只有经过计算机配置后才有效。不应部署处于这种状态的程序集。出现这种情况最常见原因有: 1) 对程序集进行签名后，修改了该程序集的内容；2) 签名过程失败；3) 延迟了程序集签名；4) 存在一个允许检查通过(原本不应通过)的注册表项。</Description>
+   <Resolution Name="NoStrongName">用强名称密钥对“{0}”进行签名。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>不要声明可见实例字段</Name>
+   <Description>公共的或受保护的实例字段会限制您更改这些数据项的实现详细信息的能力。请使用属性，因为属性不会损害可用性和性能，并且能够提供灵活性，因为属性隐藏了基础数据的实现详细信息。</Description>
+   <Resolution Name="Default">将“{0}”标记为 private 或 internal (在 VB 中为 Friend，在 C++ 中为 public private)，并提供 public 或 protected 属性来访问它。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>用 CLSCompliant 标记程序集</Name>
+   <Description>程序集应使用 CLSCompliant 属性显式说明其 ClS 符合性。没有此属性的程序集不符合 CLS。即使程序集、模块或类型的某些部分不符合 CLS，这些程序集、模块或类型本身也可以符合 CLS。适用下列规则: 1) 如果将元素标记为 CLSCompliant，则对于不符合 CLS 的所有成员来说，必须将其 CLSCompliant 属性的参数设置为 false。2) 对于每个不符合 CLS 的成员，必须提供一个可比较的符合 CLS 的备选成员。</Description>
+   <Resolution Name="NoAttr">应使用 CLSCompliantAttribute 来标记“{0}”，其值应为 true。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="8.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>指定 IFormatProvider</Name>
+   <Description>如果存在一个将 IFormatProvider 作为参数的重载，则应始终调用该重载，而不使用不具有该参数的重载。公共语言运行库中的某些方法执行值与字符串表示形式之间的相互转换，并使用一个叫做格式说明符的字符串参数，该参数包含一个或多个字符，用于指示如何对值进行转换。如果格式说明符的含义因区域性而异，则格式设置对象提供在字符串表示形式中使用的实际字符。如果区域之间的排序和比较行为应始终不变，请指定 CultureInfo.InvariantCulture。</Description>
+   <Resolution Name="Default">{0} 对未显式提供 IFormatProvider 的 {1} 进行调用。此操作应改为对 {2} 的调用。</Resolution>
+   <Owner />
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="8.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="Line">行</String>
+  <String Key="LocationNotStoredInPdb">&lt;Location not stored in Pdb&gt;</String>
+  <String Key="Project">项目</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">Microsoft Visual Studio 2005 代码分析报告</String>
+ </Localized>
+</FxCopReport>
